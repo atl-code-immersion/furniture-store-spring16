@@ -1,0 +1,12 @@
+<div class="row">
+	<% @states.each do |state| %>
+		<div class="col-md-3">
+			<div class="well">
+				<h2><%= state.name %></h2>
+				<p>Capitol: <strong><%= state.capitol %></strong></p>
+				<p>Pop: <%= number_with_delimiter state.population %></p>
+				<p>Area: <%= number_with_delimiter state.area %> sq. mi.</p>
+			</div>
+		</div>
+	<% end %>
+</div>
